@@ -1,0 +1,12 @@
+// Example 1: Basic Arithmetic, Precedence & Conditional Branching
+int x = 10;
+int y = 20;
+int result = x + y * 2;
+
+print(result);
+
+if (result > 30) {
+    print("Result is greater than 30");
+} else {
+    print("Result is 30 or less");
+}

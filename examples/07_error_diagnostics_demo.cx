@@ -1,0 +1,8 @@
+// Example 7: Intentional Semantic Errors for Live Demo
+int count = 10;
+int count = 20;            // Error 1: Duplicate declaration in same scope
+
+int bad_type = "hello";    // Error 2: Type mismatch (string assigned to int)
+float ratio = 15.5 % 2.0;  // Error 3: Modulo '%' requires integer operands
+
+print(undeclared_var + 5); // Error 4: Undeclared variable reference

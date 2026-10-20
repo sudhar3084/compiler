@@ -1,0 +1,19 @@
+// Example 6: Common Subexpression Elimination (CSE) & Algebraic Identities
+int a = 12;
+int b = 5;
+
+// Loop makes 'a' and 'b' dynamic runtime values (a = 15, b = 8)
+while (b < 8) {
+    a = a + 1;
+    b = b + 1;
+}
+
+// 'a + b' is computed twice in the same basic block -> CSE reuses first result!
+// Algebraic identities (* 1, + 0, a - a, b * 0) are simplified automatically.
+int first_calc = (a + b) * 1;
+int second_calc = (a + b) + 0;
+int zero_check = (a - a) + (b * 0);
+
+print(first_calc);
+print(second_calc);
+print(zero_check);

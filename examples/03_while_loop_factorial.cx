@@ -1,0 +1,25 @@
+// Example 3: Iterative Factorial (5!) & Sum of Even Numbers (1..10)
+int n = 5;
+int factorial = 1;
+int counter = 1;
+
+while (counter <= n) {
+    factorial = factorial * counter;
+    counter = counter + 1;
+}
+
+print("Factorial of 5 is:");
+print(factorial);
+
+// Sum all even numbers from 1 to 10 using modulo (%)
+int i = 1;
+int even_sum = 0;
+while (i <= 10) {
+    if (i % 2 == 0) {
+        even_sum = even_sum + i;
+    }
+    i = i + 1;
+}
+
+print("Sum of even numbers (1 to 10):");
+print(even_sum);

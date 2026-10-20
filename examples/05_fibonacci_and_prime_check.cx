@@ -1,0 +1,32 @@
+// Example 5: Fibonacci Generator & Prime Number Checker
+int terms = 7;
+int a = 0;
+int b = 1;
+int step = 0;
+
+print("First 7 Fibonacci numbers:");
+while (step < terms) {
+    print(a);
+    int next_val = a + b;
+    a = b;
+    b = next_val;
+    step = step + 1;
+}
+
+// Check if 29 is a prime number
+int candidate = 29;
+int divisor = 2;
+bool is_prime = true;
+
+while (divisor * divisor <= candidate) {
+    if (candidate % divisor == 0) {
+        is_prime = false;
+    }
+    divisor = divisor + 1;
+}
+
+if (is_prime) {
+    print("29 is a prime number");
+} else {
+    print("29 is composite");
+}

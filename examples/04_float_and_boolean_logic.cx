@@ -1,0 +1,24 @@
+// Example 4: Floating-Point Calculations & Boolean Conditions
+float celsius = 37.5;
+float fahrenheit = (celsius * 1.8) + 32.0;
+bool is_fever = fahrenheit >= 99.5;
+
+print("Temperature in Fahrenheit:");
+print(fahrenheit);
+
+int score = 88;
+bool attendance_ok = true;
+
+if (score >= 90 && attendance_ok) {
+    print("Grade: A+");
+} else if (score >= 80 && attendance_ok) {
+    print("Grade: A");
+} else if (score >= 70 || attendance_ok) {
+    print("Grade: B");
+} else {
+    print("Grade: Needs Improvement");
+}
+
+if (is_fever && !false) {
+    print("Status: Elevated temperature detected");
+}

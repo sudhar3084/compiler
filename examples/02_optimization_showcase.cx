@@ -1,0 +1,16 @@
+// Example 2: Compiler Optimization Showcase
+// Watch how CompilerX folds constants, simplifies identities, and prunes dead branches!
+
+int base = 4 * 5 + 10;          // Constant folding: 4 * 5 + 10 -> 30
+int factor = 2;
+int scaled = (base * factor) + 0; // Propagation + Identity (+ 0): -> 60
+int copy_val = scaled * 1;        // Algebraic simplification (* 1): -> 60
+
+print("Computed Value:", copy_val);
+
+// Constant condition branch -> else branch is statically eliminated as dead code!
+if (copy_val == 60) {
+    print("Optimization preserved exact semantics!");
+} else {
+    print("Unreachable dead branch removed by optimizer");
+}
